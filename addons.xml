@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon
+	id="plugin.video.dumpertcf"
+	name="Dumpertcf"
+	version="1.1.1"
+	provider-name="Skipmode A1, Sparkline">
+  <requires>
+    <import addon="xbmc.python"                     version="2.14.0"/>
+	<import addon="script.module.beautifulsoup"     version="3.0.8"/>
+	<import addon="script.module.requests"          version="2.4.3"/>
+    <import addon="plugin.video.youtube"            version="5.1.7"/>
+    <import addon="script.module.cloudflare.scrape" version="1.6.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" 	library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">Watch funny videos from Dumpert.nl (dutch)</summary>
+	<description lang="en">Watch funny videos from Dumpert.nl (dutch)</description>
+	<disclaimer lang="en">For bugs, requests or general questions visit the Dumpert.nl thread on the XBMC forum.</disclaimer>
+	<summary lang="nl">Bekijk grappige filmpjes van Dumpert.nl (dutch)</summary>
+	<description lang="nl">Bekijk grappige filmpjes van Dumpert.nl (dutch)</description>
+	<disclaimer lang="nl">Bugs of andere feedback op deze plugin kan geplaatst worden in de Dumpert.nl thread op het XBMC forum.</disclaimer>
+    <language>nl</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=162635</forum>
+    <website>http://dumpert.nl</website>
+    <email></email>
+    <source>git://github.com/skipmodea1/plugin.video.dumpert.git</source>
+  </extension>
+</addon>
+
+<addon
+	id="plugin.video.worldstarcandy"
+	name="World Star Candy"
+	version="1.0.0"
+	provider-name="Skipmode A1">
+  <requires>
+    <import addon="xbmc.python"                 version="2.14.0"/>
+	<import addon="script.module.beautifulsoup" version="3.0.8"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+	<summary lang="en">WorldstarCandy is a site that features videos of some of the most beautiful women on the planet</summary>
+    <description lang="en">WorldstarCandy is a site that features videos of some of the most beautiful women on the planet</description>
+    <disclaimer lang="en">For bugs, requests or general questions visit the WorldstarCandy thread on the XBMC forum</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=277274</forum>
+    <website>http://worldstarcandy.com/</website>
+    <email></email>
+    <source>git://github.com/skipmodea1/plugin.video.worldstarcandy.git</source>
+  </extension>
+</addon>
+
+<addon
+  id="repository.skipmodea1"
+  name="SkipmodeA1 Add-ons"
+  version="1.0.0"
+  provider-name="skipmodea1">
+  <extension point="xbmc.addon.repository"
+             name="Unofficial SkipmodeA1's Kodi Add-on Repository">
+    <info compressed="true">https://raw.githubusercontent.com/skipmodea1/repository.skipmodea1/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/skipmodea1/repository.skipmodea1/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://github.com/skipmodea1/repository.skipmodea1/tree/master/repo/repository.skipmodea1</datadir>
+    <hashes>true</hashes>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Install Add-ons from SkipmodeA1's unofficial repository</summary>
+    <description lang="en">Download and install add-ons from the unofficial skipmodea1's kodi addon repository.</description>
+    <disclaimer lang="en">I do not host any of the online video, audio, and photo files that some of the addons link to stored on third-party websites, nor do they upload such files themselves. They are not responsible for what other people upload to any third-party sites. Therefore we urge all copyright owners, to recognize that the links contained within these addons are located somewhere else on the web. The scraped embedded links point to the location of each video on the web. Please direct all copyright infringement issues to the companies that host these files :- Google, Dailymotion, Veoh, and so forth.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.cloudflare.scrape"
+       name="Cloudflare Scrape"
+       version="1.6.1"
+       provider-name="Anorov, Skipmode A1">
+  <requires>
+    <import addon="xbmc.python" version="2.18.0" />
+	<import addon="script.module.execjs" version="1.3.1" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>A small Python module to bypass Cloudflare's anti-bot page by Anorov</summary>
+    <description>A small Python module to bypass Cloudflare's anti-bot page by Anorov</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/Anorov/cloudflare-scrape</source>
+  </extension>
+</addon>
+
+<addon id="script.module.execjs"
+       name="ExecJs"
+       version="1.3.1"
+       provider-name="Omoto Kenji/Sam Stephenson/Josh Peek, Skipmode A1">
+  <requires>
+    <import addon="xbmc.python" version="2.18.0" />
+	<import addon="script.module.six" version="1.9.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>A Python module (PyExecJs) to execute javascript by Doloopwhile</summary>
+    <description>A Python module (PyExecJs) to execute javascript by Doloopwhile</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://pypi.python.org/pypi/PyExecJS</source>
+  </extension>
+</addon>
+</addons>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.cloudflare.scrape"
+       name="Cloudflare Scrape"
+       version="1.6.1"
+       provider-name="Anorov, Skipmode A1">
+  <requires>
+    <import addon="xbmc.python" version="2.18.0" />
+	<import addon="script.module.execjs" version="1.3.1" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>A small Python module to bypass Cloudflare's anti-bot page by Anorov</summary>
+    <description>A small Python module to bypass Cloudflare's anti-bot page by Anorov</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/Anorov/cloudflare-scrape</source>
+  </extension>
+</addon>
