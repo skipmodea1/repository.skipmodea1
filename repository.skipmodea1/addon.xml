@@ -1,19 +1,18 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon
+﻿<addon
   id="repository.skipmodea1"
   name="SkipmodeA1 Add-ons"
   version="1.0.0"
   provider-name="skipmodea1">
   <extension point="xbmc.addon.repository"
              name="Unofficial SkipmodeA1's Kodi Add-on Repository">
-    <info compressed="true">https://raw.githubusercontent.com/skipmodea1/repository.skipmodea1/master/addons.xml</info>
-    <checksum>https://raw.githubusercontent.com/skipmodea1/repository.skipmodea1/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://github.com/skipmodea1/repository.skipmodea1/tree/master/repo/repository.skipmodea1</datadir>
+    <info compressed="true">https://github.com/skipmodea1/repository.skipmodea1/raw/master/addons.xml</info>
+    <checksum>https://github.com/skipmodea1/repository.skipmodea1/raw/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://github.com/skipmodea1/repository.skipmodea1/raw/master/repo</datadir>
     <hashes>true</hashes>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Install Add-ons from SkipmodeA1's unofficial repository</summary>
-    <description lang="en">Download and install add-ons from the unofficial skipmodea1's kodi addon repository.</description>
+    <summary lang="en">Install Add-ons from SkipmodeA1's unofficial Kodi repository</summary>
+    <description lang="en">Download and install add-ons from the unofficial skipmodea1's Kodi addon repository.</description>
     <disclaimer lang="en">I do not host any of the online video, audio, and photo files that some of the addons link to stored on third-party websites, nor do they upload such files themselves. They are not responsible for what other people upload to any third-party sites. Therefore we urge all copyright owners, to recognize that the links contained within these addons are located somewhere else on the web. The scraped embedded links point to the location of each video on the web. Please direct all copyright infringement issues to the companies that host these files :- Google, Dailymotion, Veoh, and so forth.</disclaimer>
     <platform>all</platform>
   </extension>
