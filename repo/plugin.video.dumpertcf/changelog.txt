@@ -1,7 +1,0 @@
-v1.1.1 (2016-05-26):
-This is a Fork of version 1.1.1 of the dumpert addon. It deals with the cloudflare firewall. However there are some dependencies:
-- script.module.cloudflare.scrape (not in kodi repo)
-- script.module.execjs (not in kodi repo)
-- script.module.six (not in kodi repo)
-- script.module.requests
-- Node.JS has to be installed on your computer
