@@ -11,5 +11,5 @@ ADDON = "plugin.video.worldstarcandy"
 SETTINGS = xbmcaddon.Addon(id=ADDON)
 LANGUAGE = SETTINGS.getLocalizedString
 IMAGES_PATH = os.path.join(xbmcaddon.Addon(id=ADDON).getAddonInfo('path'), 'resources', 'images')
-DATE = "2016-05-26"
-VERSION = "1.0.6"
+DATE = "2016-06-05"
+VERSION = "1.0.7-SNAPSHOT"

@@ -28,13 +28,10 @@ class Main:
         self.plugin_handle = int(sys.argv[1])
 
         # Get plugin settings
-        self.DEBUG = SETTINGS.getSetting('debug')
         self.VIDEO = SETTINGS.getSetting('video')
 
-        if (self.DEBUG) == 'true':
-            print 'Python Version: ' + sys.version
-            xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s, %s = %s" % (
-                ADDON, VERSION, DATE, "ARGV", repr(sys.argv), "File", str(__file__)), xbmc.LOGNOTICE)
+        xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s, %s = %s" % (
+                ADDON, VERSION, DATE, "ARGV", repr(sys.argv), "File", str(__file__)), xbmc.LOGDEBUG)
 
         # Parse parameters...
         self.video_page_url = urlparse.parse_qs(urlparse.urlparse(sys.argv[2]).query)['video_page_url'][0]
@@ -42,9 +39,8 @@ class Main:
         self.title = urlparse.parse_qs(urlparse.urlparse(sys.argv[2]).query)['title'][0]
         self.title = str(self.title)
 
-        if (self.DEBUG) == 'true':
-            xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
-                ADDON, VERSION, DATE, "self.video_page_url", str(self.video_page_url)), xbmc.LOGNOTICE)
+        xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
+                ADDON, VERSION, DATE, "self.video_page_url", str(self.video_page_url)), xbmc.LOGDEBUG)
 
         #
         # Play video...
@@ -88,7 +84,7 @@ class Main:
         video_url = html_source[begin_pos_video_file:end_pos_video_file]
 
         xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
-            ADDON, VERSION, DATE, "video_url", str(video_url)), xbmc.LOGNOTICE)
+            ADDON, VERSION, DATE, "video_url1", str(video_url)), xbmc.LOGDEBUG)
 
         try:
             # Get HTML page...
@@ -112,11 +108,10 @@ class Main:
         except:
             unplayable_media_file = True
 
-        if (self.DEBUG) == 'true':
-            xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
-                ADDON, VERSION, DATE, "have_valid_url", str(have_valid_url)), xbmc.LOGNOTICE)
-            xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
-                ADDON, VERSION, DATE, "video_url", str(video_url)), xbmc.LOGNOTICE)
+        xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
+                ADDON, VERSION, DATE, "have_valid_url", str(have_valid_url)), xbmc.LOGDEBUG)
+        xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
+                ADDON, VERSION, DATE, "video_url2", str(video_url)), xbmc.LOGDEBUG)
 
         if have_valid_url:
             list_item = xbmcgui.ListItem(path=video_url)

@@ -1,11 +1,11 @@
 # XBMC Media Center language file
-# Addon Name: World Star Candy
-# Addon id: plugin.video.worldstarcandy
+# Addon Name: Dumpertcf
+# Addon id: plugin.video.dumpertcf
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC-Addons\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
-"POT-Creation-Date: 2016-05-28 05:41+0000\n"
+"POT-Creation-Date: 2016-06-04 07:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE\n"
@@ -16,19 +16,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgctxt "Addon Summary"
-msgid "WorldstarCandy is a site that features videos of some of the most beautiful women on the planet"
+msgid "Watch funny videos from Dumpert.nl (dutch)"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "WorldstarCandy is a site that features videos of some of the most beautiful women on the planet"
+msgid "Watch funny videos from Dumpert.nl (dutch)"
 msgstr ""
 
 msgctxt "Addon Disclaimer"
-msgid "For bugs, requests or general questions visit the WorldstarCandy thread on the XBMC forum"
+msgid "For bugs, requests or general questions visit the Dumpert.nl thread on the XBMC forum."
 msgstr ""
 
 msgctxt "#30000"
-msgid "WorldStarCandy.com"
+msgid "Top"
+msgstr ""
+
+msgctxt "#30001"
+msgid "New"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Themes"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Flop"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Top Time machine"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Classics"
 msgstr ""
 
 msgctxt "#30100"
@@ -41,10 +65,6 @@ msgstr ""
 
 msgctxt "#30102"
 msgid "Website"
-msgstr ""
-
-msgctxt "#30103"
-msgid "Search"
 msgstr ""
 
 msgctxt "#30200"
@@ -109,4 +129,40 @@ msgstr ""
 
 msgctxt "#30507"
 msgid "Error getting page: %s"
+msgstr ""
+
+msgctxt "#30508"
+msgid "What are you looking for?"
+msgstr ""
+
+msgctxt "#30509"
+msgid "Pick a date"
+msgstr ""
+
+msgctxt "#30510"
+msgid "Day top for %s"
+msgstr ""
+
+msgctxt "#30511"
+msgid "Week top for %s"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Month top for %s"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Dumpert can not be reached due to Cloudflare firewall. Error importing cfscrape"
+msgstr ""
+
+msgctxt "#30514"
+msgid "Dumpert can not be reached due to Cloudflare firewall. Error making cfscrape"
+msgstr ""
+
+msgctxt "#30515"
+msgid "Dumpert can not be reached due to Cloudflare firewall. Error getting page"
+msgstr ""
+
+msgctxt "#30600"
+msgid "Show NSFW content"
 msgstr ""

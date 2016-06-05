@@ -1,14 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# 
-# Constants
-#
-# also in ..._const
-__addon__ = "plugin.video.worldstarcandy"
-__date__ = "26 may 2016"
-__version__ = "1.0.0"
-
 #
 # Imports
 #
@@ -22,23 +14,22 @@ import xbmcaddon
 import xbmcgui
 import xbmcplugin
 
-BASEURL = "http://www.worldstarcandy.com"
-
-LIB_DIR = xbmc.translatePath(os.path.join(xbmcaddon.Addon(id=__addon__).getAddonInfo('path'), 'resources', 'lib'))
+LIB_DIR = xbmc.translatePath(
+    os.path.join(xbmcaddon.Addon(id="plugin.video.worldstarcandy").getAddonInfo('path'), 'resources', 'lib'))
 sys.path.append(LIB_DIR)
 
-# Get plugin settings
-DEBUG = xbmcaddon.Addon(id='plugin.video.worldstarcandy').getSetting('debug')
+from worldstarcandy_const import ADDON, DATE, VERSION
 
-if (DEBUG) == 'true':
-    xbmc.log("[ADDON] %s v%s (%s) is starting, ARGV = %s" % (__addon__, __version__, __date__, repr(sys.argv)),
-             xbmc.LOGNOTICE)
+BASEURL = "http://www.worldstarcandy.com"
 
 # Parse parameters...
 if len(sys.argv[2]) == 0:
     #
     # Main menu
     #
+    #
+    xbmc.log("[ADDON] %s, Python Version %s" % (ADDON, str(sys.version)), xbmc.LOGDEBUG)
+    xbmc.log("[ADDON] %s v%s (%s) is starting, ARGV = %s" % (ADDON, VERSION, DATE, repr(sys.argv)), xbmc.LOGDEBUG)
     import worldstarcandy_list as plugin
 else:
     action = urlparse.parse_qs(urlparse.urlparse(sys.argv[2]).query)['action'][0]

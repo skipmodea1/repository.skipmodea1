@@ -2,7 +2,7 @@
 <addon 
 	id="plugin.video.dumpertcf"
 	name="Dumpertcf"
-	version="1.1.1"
+	version="1.1.2-SNAPSHOT"
 	provider-name="Skipmode A1, Sparkline">
   <requires>
     <import addon="xbmc.python"                     version="2.14.0"/>
